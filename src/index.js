@@ -8,7 +8,8 @@ const greeting = (question) => {
   console.log(question);
 };
 
-const fail = () => {
+const fail = (yourAnswer, correctAnswer) => {
+  console.log(`'${yourAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
   console.log(`Let's try again, ${name}!`);
 };
 
