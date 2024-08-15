@@ -35,8 +35,7 @@ export default () => {
     if (parseInt(yourAnswer, 10) === correctAnswer) {
       console.log('Correct!');
     } else {
-      console.log(`'${yourAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-      fail();
+      fail(yourAnswer, correctAnswer);
       break;
     }
   }
